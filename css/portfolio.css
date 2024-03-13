@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cv {
+  margin: 10px 20px;
+}
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: #344955;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav li {
+  height: 50px;
+}
+nav a {
+  height: 100%;
+  padding: 0 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #dde6ed;
+}
+nav a:hover {
+  border-radius: 25px;
+  height: 90%;
+  background-color: #50727B;
+}
+
+nav li:first-child {
+  margin-right: auto;
+}
+#topNavBar{
+  display: flex;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: #344955;
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  z-index: 9999;
+}
+
+
+.sidebar a:hover {
+  width: 100%;
+  background-color: #50727B;
+}
+
+.sidebar li {
+  width: 100%;
+  position: relative;
+}
+
+.cross-parent {
+  position: relative;
+}
+
+.sidebar a {
+  position: absolute;
+  right: 10%;
+  width: 100%;
+  color: #dde6ed;
+}
+
+li .cross {
+  position: absolute;
+  left: 30%;
+}
+
+.cross-parent .cross:hover {
+  color: red;
+  width: 30%;
+}
+
+.menu-button {
+  display: none;
+}
+
+.floating-box {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  float: left; /* Float left */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Add shadow */
+  transition: box-shadow 0.3s ease; /* Add transition effect */
+}
+
+.floating-box:hover {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Change shadow on hover */
+}
+
+#gfg {
+  transition: transform 0.3s ease;
+}
+
+#gfg:hover {
+  transform: scale(1.3);
+}
+
+#link {
+  transition: transform 0.3s ease;
+}
+
+#link:hover {
+  transform: scale(1.3);
+}
+
+#simon {
+  transition: transform 0.3s ease;
+}
+
+#simon:hover {
+  transform: scale(1.1);
+}
+
+#instagram {
+  transition: transform 0.3s ease;
+}
+
+#instagram:hover {
+  transform: scale(1.3);
+}
+
+#github {
+  transition: transform 0.3s ease;
+
+}
+
+#github:hover {
+  transform: scale(1.3);
+  z-index: 100;
+}
+
+#por {
+  transition: transform 0.3s ease;
+}
+
+#por:hover {
+  transform: scale(1.1);
+}
+
+#leetcode {
+  transition: transform 0.3s ease;
+}
+
+#leetcode:hover {
+  transform: scale(1.3);
+}
+
+#linkedin {
+  transition: transform 0.3s ease;
+}
+
+#linkedin:hover {
+  transform: scale(1.3);
+}
+
+
+#skills #skills-icon{
+  
+  height:36px;
+   width:36px;
+   margin-left: 1rem;
+   transition: transform 0.5s ease;
+}
+
+
+#skills #skills-icon:hover{
+  transform: scale(1.3);
+  transform: rotate(360deg);
+}
+
+.learning {
+  animation: pulse 1.5s infinite alternate;
+}
+
+@keyframes pulse {
+  from {
+      transform: scale(1);
+  }
+  to {
+      transform: scale(1.1);
+  }
+}
+
+
+
+#home {
+  margin-top: 0;
+  margin-right: 0;
+}
+#home-text {
+  padding-left: 100px;
+}
+
+#photo{
+  padding-left: 10%;
+}
+
+#skills-icon{
+  height: 2rem;
+  width: 2rem;
+}
+
+@media (max-width: 992px) {
+
+  #photo {
+    margin-left: 15%;
+  }
+  #home-text {
+    padding-left: 3rem;
+  }
+
+}
+
+@media (max-width: 800px) {
+  #topNavBar{
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+  }
+}
+
+
+
+
+@media (max-width: 575px) {
+  #photo {
+    margin-left: 10%;
+  }
+  #allAcc {
+    display: flex;
+    justify-content: center !important;
+  }
+
+
+}
+
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+    z-index : 9999;
+  }
+
+
+}
+
+
